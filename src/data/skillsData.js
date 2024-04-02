@@ -97,7 +97,7 @@ export const skills = {
       {
         id: "1",
         name: "github",
-        img: "https://cdn-icons-png.flaticon.com/512/270/270798.png",
+        img: git,
         percentage: "90%",
       },
       {
