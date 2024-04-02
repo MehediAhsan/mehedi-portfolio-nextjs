@@ -1,0 +1,56 @@
+.btn-details {
+    --color: #000000;
+    --color2: #ffffff;
+    padding: 5px 10px;
+    background-color: #0b6a8f;
+    border-radius: 6px;
+    border: 0.3px solid var(--color);
+    transition: 4s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: cursive;
+    text-transform: uppercase;
+    color: var(--color);
+  }
+  
+  .btn-details::after,
+  .btn-details::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: 0.5s ease-out;
+    background-color: var(--color);
+  }
+  
+  .btn-details::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+  }
+  
+  .btn-details:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+  }
+  
+  .btn-details:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+  }
+  
+  .btn-details:hover {
+    color: var(--color2);
+  }
+  
+  .btn-details:active {
+    filter: brightness(0.7);
+    transform: scale(0.98);
+  }
