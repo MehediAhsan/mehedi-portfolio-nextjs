@@ -18,7 +18,7 @@ const About = () => {
         >
           <Image
             src={about}
-            className="w-80 md:w-96 rounded-[20px] drop-shadow-2xl"
+            className="w-80 md:w-96 rounded drop-shadow-2xl"
             alt="Mehedi"
             loading="lazy"
           />
@@ -49,13 +49,13 @@ const About = () => {
             and driven problem solver, dedicated to staying ahead in the
             ever-evolving world of web development.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:w-3/4 mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {info.map((content) => (
               <div key={content.text} className="text-center">
                 <h3 className="text-3xl font-medium text-teal-600">
                   {content.count}
                 </h3>
-                <p className="text-sm text-gray-200">{content.text}</p>
+                <p className="text-sm text-gray-300">{content.text}</p>
               </div>
             ))}
           </div>

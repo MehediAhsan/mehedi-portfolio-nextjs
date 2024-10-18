@@ -8,22 +8,17 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="container px-4 py-3 mx-auto md:px-24 lg:px-8">
-      <div className="relative flex items-center justify-between uppercase">
-        {/* <a href="/" className="inline-flex items-center ">
-          <span className="ml-2 text-2xl font-medium tracking-wide text-primary transform -skew-y-3">
-            Mehedi <span className="text-slate-300">Ahsan</span>
-          </span>
-        </a> */}
-        <Link to="/">
+      <div className="relative flex items-center justify-center uppercase">
+        {/* <Link to="/">
           <Image src={logo} alt="" className="w-10 md:w-12 cursor-pointer" />
-        </Link>
-        <ul className="items-center hidden space-x-8 lg:flex">
+        </Link> */}
+        <ul className="items-center hidden space-x-6 md:flex">
           <li>
             <Link
               to={"about"}
               smooth
               duration={500}
-              className="transition-colors duration-200 hover:text-slate-200 cursor-pointer text-sm text-primary"
+              className="transition-colors duration-200 hover:text-slate-200 cursor-pointer text-xs text-primary shadow-sm shadow-slate-600 tracking-wider rounded-full px-4 py-2 font-medium"
             >
               About Me
             </Link>
@@ -33,7 +28,7 @@ const Navbar = () => {
               to={"skills"}
               smooth
               duration={500}
-              className="transition-colors duration-200 hover:text-slate-200 cursor-pointer text-sm text-primary"
+              className="transition-colors duration-200 hover:text-slate-200 cursor-pointer text-xs text-primary shadow-sm shadow-slate-600 tracking-wider rounded-full px-4 py-2 font-medium"
             >
               Skills
             </Link>
@@ -43,7 +38,7 @@ const Navbar = () => {
               to={"projects"}
               smooth
               duration={500}
-              className="transition-colors duration-200 hover:text-slate-200 cursor-pointer text-sm text-primary"
+              className="transition-colors duration-200 hover:text-slate-200 cursor-pointer text-xs text-primary shadow-sm shadow-slate-600 tracking-wider rounded-full px-4 py-2 font-medium"
             >
               Projects
             </Link>
@@ -53,7 +48,7 @@ const Navbar = () => {
               to={"youtube"}
               smooth
               duration={500}
-              className="transition-colors duration-200 hover:text-slate-200 cursor-pointer text-sm text-primary"
+              className="transition-colors duration-200 hover:text-slate-200 cursor-pointer text-xs text-primary shadow-sm shadow-slate-600 tracking-wider rounded-full px-4 py-2 font-medium"
             >
               Youtube
             </Link>
@@ -63,13 +58,13 @@ const Navbar = () => {
               to={"contact"}
               smooth
               duration={500}
-              className="transition-colors duration-200 hover:text-slate-200 cursor-pointer text-sm text-primary"
+              className="transition-colors duration-200 hover:text-slate-200 cursor-pointer text-xs text-primary shadow-sm shadow-slate-600 tracking-wider rounded-full px-4 py-2 font-medium"
             >
               Contact Me
             </Link>
           </li>
         </ul>
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <button
             aria-label="Open Menu"
             title="Open Menu"
@@ -96,16 +91,6 @@ const Navbar = () => {
               <div className="p-3 bg-gradient-to-r from-[#000808] via-[#000101] to-[#000808] overflow-hidden rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    {/* <a
-                      href="/"
-                      aria-label="Company"
-                      title="Company"
-                      className="inline-flex items-center"
-                    >
-                      <span className="ml-2 text-2xl font-medium tracking-wide text-primary transform -skew-y-3">
-                        Mehedi <span className="text-slate-300">Ahsan</span>
-                      </span>
-                    </a> */}
                     <Link to="/">
                       <img src={logo} alt="" className="w-10 cursor-pointer" />
                     </Link>
