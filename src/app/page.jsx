@@ -2,6 +2,7 @@ import About from "@/components/home/About";
 import AllSkills from "@/components/home/AllSkills";
 import Banner from "@/components/home/Banner";
 import Contact from "@/components/home/Contact";
+import Experience from "@/components/home/Experience";
 import Navbar from "@/components/home/Navbar";
 import Projects from "@/components/home/Projects";
 import ScrollTop from "@/components/home/ScrollTop";
@@ -15,6 +16,7 @@ export default function Home() {
       <Banner />
       <About />
       <AllSkills />
+      <Experience />
       <Projects />
       <Youtube />
       <Contact />
