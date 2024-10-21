@@ -1,5 +1,5 @@
 import Skill from "./Skill";
-import { skills } from '../../data/skillsData';
+import { skills } from "../../data/skillsData";
 
 const AllSkills = () => {
   return (
@@ -9,17 +9,10 @@ const AllSkills = () => {
       name="skills"
       className="container mx-auto mb-20 overflow-hidden"
     >
-      {/* <h1 className='text-3xl font-bold text-center mb-10 text-slate-200'>My <span className='text-teal-500'>Skills</span></h1> */}
-      <div className="container mb-20">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <h3 className="animate-charcter tracking-[10px] font-medium">
-              {" "}
-              SKILLS
-            </h3>
-          </div>
-        </div>
-      </div>
+      <h3 className="animate-charcter tracking-[10px] font-medium text-center mb-20 text-lg">
+        {" "}
+        Skills
+      </h3>
       <div className="flex flex-col gap-14 justify-center md:mx-10">
         {/* Expertise */}
         <div className="flex flex-col md:flex-row gap-10 mx-10 items-center">

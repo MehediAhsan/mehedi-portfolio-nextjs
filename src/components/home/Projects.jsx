@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,16 +23,10 @@ const Projects = () => {
       name="projects"
       className="container mx-auto my-28 relative px-5 md:px-10"
     >
-      <div className="container mb-16">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <h3 className="animate-charcter tracking-[10px] font-medium">
-              {" "}
-              PROJECTS
-            </h3>
-          </div>
-        </div>
-      </div>
+      <h3 className="animate-charcter tracking-[10px] font-medium text-center mb-20 text-lg">
+        {" "}
+        Projects
+      </h3>
 
       <div className="pb-12 mb-5">
         {/* <button className="bg-primary p-2 text-black">Most Views</button> */}

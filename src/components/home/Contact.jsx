@@ -39,19 +39,11 @@ const Contact = () => {
       name="contact"
       className="container mx-auto my-28"
     >
-      {/* <h1 className="text-3xl font-bold text-center my-10 text-slate-200">
-        Contact <span className="text-teal-500">Me</span>
-      </h1> */}
-      <div className="container mb-10">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <h3 className="animate-charcter tracking-[10px] font-medium">
-              {" "}
-              CONTACT
-            </h3>
-          </div>
-        </div>
-      </div>
+      <h3 className="animate-charcter tracking-[10px] font-medium text-center mb-20 text-lg">
+        {" "}
+        Contact{" "}
+      </h3>
+
       <section className="py-6 text-primary">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x divide-gray-400">
           <div

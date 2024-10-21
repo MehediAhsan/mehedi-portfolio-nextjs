@@ -28,7 +28,12 @@ const Experience = () => {
   return (
     <section id="experience" className="pt-16">
       <div className="container mx-auto w-full md:w-9/12 px-4">
-        <h2 className="text-2xl uppercase font-medium text-center text-white mb-12">Experience</h2>
+        
+        <h3 className="animate-charcter tracking-[10px] font-medium text-center mb-20 text-lg">
+          {" "}
+          Experience
+        </h3>
+
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div
@@ -36,10 +41,14 @@ const Experience = () => {
               className=" shadow-slate-900 bg-opacity-60 backdrop-filter backdrop-blur-lg p-6 rounded shadow-md transition duration-300 ease-in-out transform"
             >
               <h3 className="text-xl text-white mb-1">{exp.role}</h3>
-              <p className="text-gray-400">{exp.company} | {exp.period}</p>
+              <p className="text-gray-400">
+                {exp.company} | {exp.period}
+              </p>
               <ul className="mt-4 list-disc list-inside space-y-2">
                 {exp.responsibilities.map((item, idx) => (
-                  <li key={idx} className="text-gray-300 text-sm">{item}</li>
+                  <li key={idx} className="text-gray-300 text-sm">
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
