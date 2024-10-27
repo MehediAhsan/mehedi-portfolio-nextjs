@@ -11,6 +11,7 @@ const experiences = [
       "Optimize components for maximum performance across a vast array of devices.",
       "Actively contribute to various projects including ‘KWF’, ‘BIWTA’, ‘Arc Deco’, ‘AKT’.",
     ],
+    link: 'https://www.suffixit.com/'
   },
   {
     role: "Frontend Developer",
@@ -21,6 +22,7 @@ const experiences = [
       "Implement and maintain admin panels for efficient content management and control.",
       "Collaborate with back-end developers to integrate front-end interfaces with server-side.",
     ],
+    link: 'https://www.playwise.gg/'
   },
 ];
 
@@ -38,11 +40,11 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className=" shadow-slate-900 bg-opacity-60 backdrop-filter backdrop-blur-lg p-6 rounded shadow-md transition duration-300 ease-in-out transform"
+              className=" shadow-slate-900 p-6 rounded shadow-md"
             >
-              <h3 className="text-xl text-white mb-1">{exp.role}</h3>
-              <p className="text-gray-400">
-                {exp.company} | {exp.period}
+              <h3 className="text-xl mb-1 text-gray-300">{exp.role}</h3>
+              <p className="text-gray-400 text-sm">
+                <a href={exp.link} target="_blank" className="text-blue-700">{exp.company}</a> | {exp.period}
               </p>
               <ul className="mt-4 list-disc list-inside space-y-2">
                 {exp.responsibilities.map((item, idx) => (
