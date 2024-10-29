@@ -11,6 +11,7 @@ const MotionWrapper = ({
   stagger = 0, // Optional staggering for child animations
   customVariants = null, // Allows overriding with custom variants
   threshold = 0.2,       // Set scroll trigger threshold (0.2 = 20% visibility)
+  repeat = true,
   ...props // Any other props you want to pass to the motion.div
 }) => {
   // Choose the variant: customVariants (if provided) takes precedence
@@ -23,7 +24,7 @@ const MotionWrapper = ({
       initial="hidden"
       whileInView="visible" // Trigger animation when in view
       exit="exit"
-      viewport={{ once: true, amount: threshold }} // Control viewport behavior
+      viewport={{ once: !repeat, amount: threshold }} // Control viewport behavior
       transition={{
         delay,
         duration,

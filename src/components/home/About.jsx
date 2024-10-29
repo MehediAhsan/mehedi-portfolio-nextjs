@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section id="about" className="py-24 md:pb-44 px-14 md:px-28">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
-        <MotionWrapper variantName="slideInLeft" threshold={0.2}>
+        <MotionWrapper variantName="slideInLeft">
           <div
             data-aos="fade-right"
             data-aos-duration="500"
@@ -26,8 +26,8 @@ const About = () => {
             />
           </div>
         </MotionWrapper>
-        {/* <MotionWrapper variantName="slideInRight" threshold={0.2}> */}
-          <div className="md:w-1/2 text-center md:text-left">
+        <div className="md:w-1/2 text-center md:text-left">
+          <MotionWrapper variantName="slideInRight">
             <h1
               className="text-3xl text-gray-300 mb-4"
               style={{ fontFamily: "cursive" }}
@@ -59,8 +59,8 @@ const About = () => {
                 </div>
               ))}
             </div>
-          </div>
-        {/* </MotionWrapper> */}
+          </MotionWrapper>
+        </div>
       </div>
     </section>
   );
