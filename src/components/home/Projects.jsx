@@ -3,7 +3,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css/effect-coverflow";
+import { Navigation, Autoplay, EffectCoverflow } from "swiper/modules";
 import { projects } from "../../data/projectsData";
 import ProjectCard from "../shared/ProjectCard";
 import "../../styles/projectStyle.css";
@@ -25,23 +26,32 @@ const Projects = () => {
 
       <MotionWrapper variantName="fadeInUp">
         <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
+          effect="coverflow"
           loop={true}
+          centeredSlides={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: true,
+          }}
+          coverflowEffect={{
+            rotate: 30,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
           }}
           navigation={{
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next",
           }}
+          // Responsive breakpoints for adjusting number of slides
           breakpoints={{
-            640: { slidesPerView: 2, spaceBetween: 20 },
-            768: { slidesPerView: 2, spaceBetween: 30 },
-            1024: { slidesPerView: 3, spaceBetween: 40 },
+            320: { slidesPerView: 1, spaceBetween: 10 },   // Mobile screens
+            640: { slidesPerView: 1, spaceBetween: 20 },   // Small screens
+            768: { slidesPerView: 2, spaceBetween: 30 },   // Medium screens
+            1024: { slidesPerView: 3, spaceBetween: 40 },  // Large screens
           }}
-          modules={[Navigation, Autoplay]}
+          modules={[Navigation, Autoplay, EffectCoverflow]}
           className="mySwiper custom-swiper"
         >
           {projects.map((project, i) => (
