@@ -5,8 +5,6 @@ import MotionWrapper from "../shared/MotionWrapper";
 const AllSkills = () => {
   return (
     <div
-      data-aos="fade-up"
-      data-aos-duration="500"
       name="skills"
       className="container mx-auto mb-20 overflow-hidden"
     >

@@ -51,11 +51,11 @@ const Experience = () => {
                   onClick={() => setActiveStep(index)}
                   className={`flex items-center gap-2 py-2 px-3 rounded text-sm ${
                     index === activeStep
-                      ? "border border-gray-800 text-gray-200"
-                      : "bg-gray-800 text-gray-400 hover:bg-gray-900 hover:text-white"
+                      ? "bg-gray-900 text-gray-300"
+                      : "border border-gray-800 text-gray-200 hover:bg-gray-900 hover:text-white"
                   }`}
                 >
-                  <span className={`text-xl ${index === activeStep ? "text-gray-200" : "text-blue-500"}`}>
+                  <span className={`text-xl ${index === activeStep ? "text-gray-300" : "text-blue-500"}`}>
                     {exp.icon}
                   </span>
                   <span>{exp.role}</span>
