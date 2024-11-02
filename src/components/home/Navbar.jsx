@@ -12,7 +12,7 @@ const Navbar = () => {
   const toggleMenu = useCallback(() => setIsMenuOpen((prev) => !prev), []);
 
   const menuItems = [
-    "about",
+    // "about",
     "skills",
     "experience",
     "projects",
