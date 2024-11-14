@@ -1,5 +1,5 @@
 .swiper-button-prev {
-    padding: 16px;
+    padding: 15px;
     border: 2px solid #0b6a8f;
     background-color: black;
     border-radius: 50%;
@@ -10,7 +10,7 @@
   }
   
   .swiper-button-next {
-    padding: 16px;
+    padding: 15px;
     border: 2px solid #0b6a8f;
     background-color: black;
     border-radius: 50%;
