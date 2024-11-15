@@ -3,6 +3,7 @@ import AllSkills from "@/components/home/AllSkills";
 import Banner from "@/components/home/Banner";
 import Contact from "@/components/home/Contact";
 import Experience from "@/components/home/Experience";
+import Footer from "@/components/home/Footer";
 import Navbar from "@/components/home/Navbar";
 import Projects from "@/components/home/Projects";
 import ScrollTop from "@/components/home/ScrollTop";
@@ -19,9 +20,10 @@ export default function Home() {
       <Experience />
       <Projects />
       <Youtube />
-      <Contact />
+      {/* <Contact /> */}
       <Social />
       <ScrollTop />
+      <Footer/>
     </main>
   );
 }

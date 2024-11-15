@@ -17,7 +17,7 @@ const Navbar = () => {
     "experience",
     "projects",
     "youtube",
-    "contact",
+    // "contact",
   ];
 
   return (
@@ -45,6 +45,8 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Menu Button */}
+        <div className="flex justify-between items-center w-full md:hidden">
+        <Image src={logo} alt="logo" className="w-6 h-6 md:hidden" />
         <button
           aria-label="Toggle Menu"
           className="p-2 transition duration-500 rounded md:hidden"
@@ -70,6 +72,7 @@ const Navbar = () => {
             />
           </motion.svg>
         </button>
+        </div>
 
         {/* Mobile Menu */}
         <AnimatePresence>
@@ -81,11 +84,11 @@ const Navbar = () => {
               animate="visible"
               exit="exit"
             >
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-end mb-2">
                 <button
                   aria-label="Close Menu"
                   onClick={toggleMenu}
-                  className="p-2 transition duration-500"
+                  className="transition duration-500"
                 >
                   <svg className="w-5 text-primary" viewBox="0 0 24 24">
                     <path

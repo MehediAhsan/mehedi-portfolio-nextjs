@@ -10,7 +10,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 md:pb-44 px-14 md:px-28">
+    <section id="about" className="py-24 md:pb-44 px-10 md:px-28">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <MotionWrapper variantName="slideInLeft">
           <div
@@ -26,7 +26,7 @@ const About = () => {
             />
           </div>
         </MotionWrapper>
-        <div className="md:w-1/2 text-center md:text-left">
+        <div className="md:w-1/2 text-left">
           <MotionWrapper variantName="slideInRight">
             <h1
               className="text-3xl text-gray-300 mb-4"
@@ -35,8 +35,7 @@ const About = () => {
               Mehedi Ahsan
             </h1>
             <p
-              className="text-primary mb-10 tracking-wide text-justify italic"
-              style={{ fontFamily: "cursive" }}
+              className="text-primary mb-10 text-justify italic text-sm md:text-base"
             >
               A dedicated and driven Software Engineer, from Dhaka, Bangladesh.
               Completed my graduation B.Sc in Computer Science and Engineering.
