@@ -11,7 +11,7 @@ const MotionWrapper = ({
   stagger = 0, // Optional staggering for child animations
   customVariants = null, // Allows overriding with custom variants
   threshold = 0.2,       // Set scroll trigger threshold (0.2 = 20% visibility)
-  repeat = true,
+  repeat = false,
   ...props // Any other props you want to pass to the motion.div
 }) => {
   // Choose the variant: customVariants (if provided) takes precedence

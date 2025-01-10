@@ -5,9 +5,9 @@ import { RiMessage2Line } from "react-icons/ri";
 import Modal from "./Modal";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
-import MotionWrapper from "./MotionWrapper";
-import { FaLocationArrow, FaPhone } from "react-icons/fa";
+import { FaLocationArrow, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Chatbot() {
   const [open, setOpen] = useState(false);
@@ -64,17 +64,17 @@ export default function Chatbot() {
                     using the details below.
                   </p>
                   <div className="space-y-3">
-                    <p className="flex items-center gap-1 text-sm font-semibold">
+                    <p className="flex items-center gap-2 text-sm">
                       <FaLocationArrow />
-                      <span>Dhaka, Bangladesh</span>
+                      <span className="text-gray-300">Dhaka, Bangladesh</span>
                     </p>
-                    <p className="flex items-center gap-1 text-sm font-semibold">
-                      <FaPhone />
-                      <span>+8801929378419</span>
+                    <p className="flex items-center gap-2 text-sm">
+                      <IoLogoWhatsapp />
+                      <span className="text-gray-300">+8801929378419</span>
                     </p>
-                    <p className="flex items-center gap-1 text-sm font-semibold">
+                    <p className="flex items-center gap-2 text-sm">
                       <MdEmail />
-                      <span>mdmehedicse01@gmail.com</span>
+                      <span className="text-gray-300">mdmehedicse01@gmail.com</span>
                     </p>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function Chatbot() {
                       type="text"
                       name="user_name"
                       placeholder="Name..."
-                      className="mt-1 block w-full rounded-md shadow-sm text-gray-800 text-sm border-b py-2 pl-2 bg-transparent border-teal-700 outline-none ring-none focus:ring-1 focus:ring-teal-700"
+                      className="mt-1 block w-full rounded-md text-gray-200 text-sm border py-1 pl-2 bg-transparent border-teal-900 outline-none ring-none"
                       required
                     />
                   </label>
@@ -103,7 +103,7 @@ export default function Chatbot() {
                       type="email"
                       name="user_email"
                       placeholder="Email..."
-                      className="mt-1 block w-full rounded-md shadow-sm text-gray-800 text-sm border-b py-2 pl-2 bg-transparent border-teal-700 outline-none ring-none focus:ring-1 focus:ring-teal-700"
+                      className="mt-1 block w-full rounded-md text-gray-200 text-sm border py-1 pl-2 bg-transparent border-teal-900 outline-none ring-none"
                       required
                     />
                   </label>
@@ -113,7 +113,7 @@ export default function Chatbot() {
                       name="message"
                       rows="2"
                       placeholder="Write Here..."
-                      className="mt-1 block w-full rounded-md text-gray-800 text-sm border-b py-2 pl-2 bg-transparent border-teal-700 outline-none ring-none focus:ring-1 focus:ring-teal-700"
+                      className="mt-1 block w-full rounded-md text-gray-200 text-sm border py-1 pl-2 bg-transparent border-teal-900 outline-none ring-none"
                       required
                     ></textarea>
                   </label>

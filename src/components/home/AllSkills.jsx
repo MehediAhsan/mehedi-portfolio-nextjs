@@ -8,8 +8,7 @@ const AllSkills = () => {
       name="skills"
       className="container mx-auto mb-20 overflow-hidden"
     >
-      <h3 className="animate-charcter tracking-[10px] font-medium text-center mb-20 text-lg">
-        {" "}
+      <h3 className="box mb-14">
         Skills
       </h3>
       <div className="flex flex-col gap-14 justify-center md:mx-10">

@@ -37,7 +37,7 @@ const Experience = () => {
   return (
     <section id="experience" className="pt-16">
       <div className="container mx-auto w-full md:w-9/12 px-4">
-        <h3 className="animate-charcter tracking-[10px] font-medium text-center mb-20 text-lg">
+        <h3 className="box mb-14">
           Experience
         </h3>
 

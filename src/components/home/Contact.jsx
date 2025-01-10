@@ -35,7 +35,7 @@ const Contact = () => {
 
   return (
     <MotionWrapper id="contact" variantName="fadeInUp" className="container mx-auto my-28">
-      <h3 className="animate-charcter tracking-[10px] font-medium text-center mb-20 text-lg">
+      <h3 className="box mb-14">
         Contact
       </h3>
 

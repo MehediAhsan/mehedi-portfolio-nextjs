@@ -19,7 +19,7 @@ const Projects = () => {
       className="container mx-auto my-28 relative px-5 md:px-10"
     >
       <MotionWrapper variantName="fadeInUp">
-        <h3 className="animate-charcter tracking-[10px] font-medium text-center mb-20 text-lg">
+        <h3 className="box mb-14">
           Projects
         </h3>
       </MotionWrapper>
@@ -60,7 +60,7 @@ const Projects = () => {
         >
           {projects.map((project, i) => (
             <SwiperSlide key={i}>
-              <MotionWrapper variantName="fadeIn" delay={i * 0.1}>
+              <MotionWrapper variantName="fadeIn" delay={i * 0.1} repeat={true}>
                 <ProjectCard project={project} />
               </MotionWrapper>
             </SwiperSlide>

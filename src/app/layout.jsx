@@ -1,9 +1,12 @@
 import Chatbot from "@/components/shared/Chatbot";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata = {
   title: "Mehedi Ahsan",
@@ -17,7 +20,7 @@ export default function RootLayout({ children }) {
         <div className="bg-gradient-to-r from-[#000808] via-[#000101] to-[#000808] overflow-hidden text-white">
           {children}
           <Toaster />
-          <Chatbot/>
+          <Chatbot />
         </div>
       </body>
     </html>
