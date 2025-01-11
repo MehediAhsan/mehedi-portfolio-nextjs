@@ -16,17 +16,9 @@ const Projects = () => {
     <MotionWrapper
       id="projects"
       variantName="fadeInUp"
-      className="container mx-auto my-28 relative px-5 md:px-10"
+      className="container mx-auto my-28 relative px-10 md:px-20"
     >
-      <MotionWrapper variantName="fadeInUp">
-        <h3 className="box mb-14">
-          Projects
-        </h3>
-      </MotionWrapper>
-
-      <div className="pb-12 mb-5">
-        {/* <button className="bg-primary p-2 text-black">Most Views</button> */}
-      </div>
+      <h3 className="box mb-20">Projects</h3>
 
       <MotionWrapper variantName="fadeInUp">
         <Swiper
@@ -48,12 +40,11 @@ const Projects = () => {
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next",
           }}
-          // Responsive breakpoints for adjusting number of slides
           breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 10 }, // Mobile screens
-            640: { slidesPerView: 1, spaceBetween: 20 }, // Small screens
-            768: { slidesPerView: 2, spaceBetween: 30 }, // Medium screens
-            1024: { slidesPerView: 3, spaceBetween: 40 }, // Large screens
+            320: { slidesPerView: 1, spaceBetween: 10 },
+            640: { slidesPerView: 1, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 30 },
+            1024: { slidesPerView: 3, spaceBetween: 40 },
           }}
           modules={[Navigation, Autoplay, EffectCoverflow]}
           className="mySwiper custom-swiper"

@@ -1,8 +1,7 @@
-'use client'
-// src/components/Experience.js
+"use client";
 import React, { useState } from "react";
 import MotionWrapper from "../shared/MotionWrapper";
-import { FaLaptopCode, FaBuilding } from "react-icons/fa"; // Import icons
+import { FaLaptopCode, FaBuilding } from "react-icons/fa";
 
 const experiences = [
   {
@@ -36,13 +35,10 @@ const Experience = () => {
 
   return (
     <section id="experience" className="pt-16">
-      <div className="container mx-auto w-full md:w-9/12 px-4">
-        <h3 className="box mb-14">
-          Experience
-        </h3>
+      <div className="container mx-auto w-full px-10 md:px-20">
+        <h3 className="box mb-14">Experience</h3>
 
         <div className="flex flex-col md:flex-row justify-between gap-8">
-          {/* Iconic Stepper Navigation */}
           <MotionWrapper variantName="fadeInUp" stagger={0.1}>
             <div className="flex flex-col space-y-4">
               {experiences.map((exp, index) => (
@@ -55,7 +51,11 @@ const Experience = () => {
                       : "border border-gray-800 text-gray-200 hover:bg-gray-900 hover:text-white"
                   }`}
                 >
-                  <span className={`text-xl ${index === activeStep ? "text-gray-300" : "text-blue-500"}`}>
+                  <span
+                    className={`text-xl ${
+                      index === activeStep ? "text-gray-300" : "text-blue-500"
+                    }`}
+                  >
                     {exp.icon}
                   </span>
                   <span>{exp.role}</span>
@@ -64,10 +64,11 @@ const Experience = () => {
             </div>
           </MotionWrapper>
 
-          {/* Experience Details */}
           <MotionWrapper variantName="fadeInUp" key={activeStep} delay={0.1}>
-            <div className="md:w-11/12 p-6 bg-gray-950 rounded shadow-md">
-              <h3 className="text-xl mb-1 text-gray-300">{experiences[activeStep].role}</h3>
+            <div className="p-6 bg-gray-950 rounded shadow-md">
+              <h3 className="text-xl mb-1 text-gray-300">
+                {experiences[activeStep].role}
+              </h3>
               <p className="text-gray-400 text-sm">
                 <a
                   href={experiences[activeStep].link}

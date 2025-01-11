@@ -19,18 +19,20 @@ const Youtube = () => {
   ];
 
   return (
-    <MotionWrapper id="youtube" variantName="fadeInUp" className="container mx-auto my-28 overflow-hidden">
-      {/* Title with MotionWrapper */}
-      <MotionWrapper variantName="fadeInUp">
-        <h3 className="box mb-14">
-          Youtube Video
-        </h3>
-      </MotionWrapper>
+    <MotionWrapper
+      id="youtube"
+      variantName="fadeInUp"
+      className="container mx-auto my-20 overflow-hidden px-10 md:px-20"
+    >
+      <h3 className="box mb-14">Youtube Video</h3>
 
-      {/* Video Iframes with MotionWrapper */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-10 p-6 m-0 overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 overflow-hidden">
         {videos.map((video, index) => (
-          <MotionWrapper key={video.id} variantName="fadeInUp" delay={index * 0.2}>
+          <MotionWrapper
+            key={video.id}
+            variantName="fadeInUp"
+            delay={index * 0.2}
+          >
             <div className="p-2 aspect-w-16 aspect-h-9 flex items-center justify-center">
               <iframe
                 width="560"
@@ -47,7 +49,6 @@ const Youtube = () => {
         ))}
       </div>
 
-      {/* Button with MotionWrapper */}
       <MotionWrapper variantName="fadeInUp" delay={0.5}>
         <div className="flex justify-center items-center mt-8">
           <a

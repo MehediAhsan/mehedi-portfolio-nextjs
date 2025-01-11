@@ -6,12 +6,12 @@ const AllSkills = () => {
   return (
     <div
       name="skills"
-      className="container mx-auto mb-20 overflow-hidden"
+      className="container mx-auto mb-20 overflow-hidden px-10 md:px-20"
     >
       <h3 className="box mb-14">
         Skills
       </h3>
-      <div className="flex flex-col gap-14 justify-center md:mx-10">
+      <div className="flex flex-col gap-14 justify-center">
         {/* Expertise */}
         <MotionWrapper
           variantName="fadeInUp"
@@ -19,7 +19,7 @@ const AllSkills = () => {
           stagger={0.1}
           duration={1}
         >
-          <div className="flex flex-col md:flex-row gap-10 mx-10 items-center">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
             <h1
               className="text-2xl text-white mb-5 italic"
               style={{ fontFamily: "cursive" }}
@@ -40,7 +40,7 @@ const AllSkills = () => {
           stagger={0.1}
           duration={1}
         >
-          <div className="flex flex-col md:flex-row gap-10 mx-10 items-center">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
             <h1
               className="text-2xl text-white mb-5 italic"
               style={{ fontFamily: "cursive" }}
@@ -61,7 +61,7 @@ const AllSkills = () => {
           stagger={0.1}
           duration={1}
         >
-          <div className="flex flex-col md:flex-row gap-10 mx-10 items-center">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
             <h1
               className="text-2xl text-white mb-5 italic"
               style={{ fontFamily: "cursive" }}
