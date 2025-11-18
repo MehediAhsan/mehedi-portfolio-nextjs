@@ -12,7 +12,7 @@ import Youtube from "@/components/home/Youtube";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="px-10 md:px-28">
       <Navbar />
       <Banner />
       <About />
@@ -20,7 +20,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Youtube />
-      {/* <Contact /> */}
+      <Contact />
       <Social />
       <ScrollTop />
       <Footer/>

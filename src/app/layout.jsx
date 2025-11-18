@@ -1,4 +1,3 @@
-import Chatbot from "@/components/shared/Chatbot";
 import { Poppins } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
@@ -20,7 +19,6 @@ export default function RootLayout({ children }) {
         <div className="bg-gradient-to-r from-[#000808] via-[#000101] to-[#000808] overflow-hidden text-white">
           {children}
           <Toaster />
-          <Chatbot />
         </div>
       </body>
     </html>

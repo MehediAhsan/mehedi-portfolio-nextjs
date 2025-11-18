@@ -16,7 +16,7 @@ const Projects = () => {
     <MotionWrapper
       id="projects"
       variantName="fadeInUp"
-      className="container mx-auto my-28 relative px-10 md:px-20"
+      className="container mx-auto my-28 relative"
     >
       <h3 className="box mb-20">Projects</h3>
 

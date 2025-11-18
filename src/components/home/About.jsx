@@ -10,7 +10,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 md:pb-44 px-10 md:px-28">
+    <section id="about" className="py-24 md:pb-44">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <MotionWrapper variantName="slideInLeft">
           <div className="relative group w-80 md:w-96">

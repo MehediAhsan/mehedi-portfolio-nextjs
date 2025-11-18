@@ -35,7 +35,7 @@ const Experience = () => {
 
   return (
     <section id="experience" className="pt-16">
-      <div className="container mx-auto w-full px-10 md:px-20">
+      <div className="container mx-auto w-full">
         <h3 className="box mb-14">Experience</h3>
 
         <div className="flex flex-col md:flex-row justify-between gap-8">

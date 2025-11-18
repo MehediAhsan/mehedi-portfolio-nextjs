@@ -22,7 +22,7 @@ const Youtube = () => {
     <MotionWrapper
       id="youtube"
       variantName="fadeInUp"
-      className="container mx-auto my-20 overflow-hidden px-10 md:px-20"
+      className="container mx-auto my-20 overflow-hidden"
     >
       <h3 className="box mb-14">Youtube Video</h3>
 

@@ -6,7 +6,7 @@ const AllSkills = () => {
   return (
     <div
       name="skills"
-      className="container mx-auto mb-20 overflow-hidden px-10 md:px-20"
+      className="container mx-auto mb-20 overflow-hidden"
     >
       <h3 className="box mb-14">
         Skills

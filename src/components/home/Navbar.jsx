@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../../assets/logo.png";
 import motionVariants from "@/lib/motionVariants";
-import { FaUser, FaCode, FaBriefcase, FaFolderOpen, FaYoutube } from "react-icons/fa";
+import { FaUser, FaCode, FaBriefcase, FaFolderOpen, FaYoutube, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +18,7 @@ const Navbar = () => {
     { id: "experience", label: "Experience", icon: <FaBriefcase /> },
     { id: "projects", label: "Projects", icon: <FaFolderOpen /> },
     { id: "youtube", label: "Youtube", icon: <FaYoutube /> },
+    { id: "contact", label: "Contact", icon: <FaEnvelope /> },
   ];
 
 
