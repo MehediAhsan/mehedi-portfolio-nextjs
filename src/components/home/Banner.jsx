@@ -15,17 +15,17 @@ const Banner = () => {
         </div>
         <Image
           src={photo}
-          className="w-[250px] h-[250px] shadow-lg absolute rounded-full bg-black border border-[#012838] object-cover"
+          className="w-[250px] h-[250px] absolute rounded-full border-2 border-primary border-opacity-60 object-cover"
           alt="Mehedi"
           loading="lazy"
         />
         <div className="absolute bg-gradient-to-r from-[#012838] via-[#000101] to-[#012838] w-[250px] h-[250px] rounded-full opacity-5"></div>
-        <h1 className="absolute text-xl md:text-2xl mt-48 text-white uppercase font-sans tracking-[4px]">
+        <h1 className="absolute text-xl md:text-2xl mt-48 text-white uppercase font-sans tracking-[4px] font-semibold">
           <TypeWrite />
         </h1>
         <button className="absolute mt-80 ui-btn">
           <a
-            href="https://drive.google.com/file/d/1WEuqyNWP0S805IE4Sx71X4sxH8_-EPaP/view"
+            href="https://drive.google.com/file/d/1RZD9s02-2mGVW4ebX07avbt5a9IMg70N/view?usp=drive_link"
             target="_blank"
           >
             <span>RESUME</span>

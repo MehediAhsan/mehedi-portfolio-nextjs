@@ -6,7 +6,7 @@ const TypeWrite = () => {
     <>
       <Typewriter
         options={{
-          strings: ["This is Mehedi Ahsan", "A Software Engineer"],
+          strings: ["Mehedi Ahsan", "Software Engineer"],
           autoStart: true,
           loop: true,
           delay: 75,
