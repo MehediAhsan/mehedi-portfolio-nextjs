@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
+import ParticlesBackground from "@/components/shared/ParticlesBackground";
 
 const inter = Poppins({
   subsets: ["latin"],
@@ -16,9 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-gradient-to-r from-[#000808] via-[#000101] to-[#000808] overflow-hidden text-white">
+        <div className="overflow-hidden text-white">
           {children}
           <Toaster />
+          <ParticlesBackground />
         </div>
       </body>
     </html>
