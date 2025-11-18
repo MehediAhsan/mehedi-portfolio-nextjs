@@ -120,7 +120,7 @@ export default function Chatbot() {
                   <input
                     type="submit"
                     style={{ fontFamily: "cursive" }}
-                    className="px-1 py-1 font-semibold rounded bg-[#0b6a8f] text-gray-300 cursor-pointer italic -skew-x-6"
+                    className="px-1 py-1 font-semibold rounded bg-[#4290a4] text-gray-300 cursor-pointer italic -skew-x-6"
                     value="Send"
                   />
                 </form>

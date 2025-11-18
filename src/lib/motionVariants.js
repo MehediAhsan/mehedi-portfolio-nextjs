@@ -17,7 +17,7 @@ const motionVariants = {
     exit: { x: -100, opacity: 0 },
   },
   slideInRight: {
-    hidden: { x: 100, opacity: 0 },   // Adjust x to a lower value if needed
+    hidden: { x: 100, opacity: 0 }, // Adjust x to a lower value if needed
     visible: { x: 0, opacity: 1 },
     exit: { x: 100, opacity: 0 },
   },
@@ -171,7 +171,9 @@ const motionVariants = {
     exit: { opacity: 0, scale: 0.8, y: -20 },
   },
   linkHover: {
-    hover: { scale: 1.1, color: '#f5f5f5' }, // Slight scale and color change on hover
+    hover: {
+      opacity: [1, 0.3, 1],
+    },
   },
   iconRotate: {
     open: { rotate: 90 },

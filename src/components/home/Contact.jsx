@@ -131,7 +131,7 @@ const Contact = () => {
               <input
                 type="submit"
                 style={{ fontFamily: "cursive" }}
-                className="px-1 py-1 text-lg rounded bg-[#0b6a8f] text-gray-300 mt-8 cursor-pointer italic -skew-x-6"
+                className="px-1 py-1 text-lg rounded bg-[#4290a4] text-gray-300 mt-8 cursor-pointer italic -skew-x-6"
                 value="Send"
               />
             </form>

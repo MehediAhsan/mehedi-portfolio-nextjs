@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../../assets/logo.png";
 import motionVariants from "@/lib/motionVariants";
+import { FaUser, FaCode, FaBriefcase, FaFolderOpen, FaYoutube } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,33 +13,29 @@ const Navbar = () => {
   const toggleMenu = useCallback(() => setIsMenuOpen((prev) => !prev), []);
 
   const menuItems = [
-    // "about",
-    "skills",
-    "experience",
-    "projects",
-    "youtube",
-    // "contact",
+    { id: "about", label: "About", icon: <FaUser /> },
+    { id: "skills", label: "Skills", icon: <FaCode /> },
+    { id: "experience", label: "Experience", icon: <FaBriefcase /> },
+    { id: "projects", label: "Projects", icon: <FaFolderOpen /> },
+    { id: "youtube", label: "Youtube", icon: <FaYoutube /> },
   ];
+
 
   return (
     <div className="container px-4 py-3 mx-auto md:px-24 lg:px-8">
       <div className="relative flex items-center justify-center uppercase">
         {/* Desktop Menu */}
         <ul className="hidden space-x-6 md:flex">
-          {menuItems.map((section) => (
-            <motion.li
-              key={section}
-              variants={motionVariants.linkHover}
-              whileHover="hover"
-              className="cursor-pointer"
-            >
+          {menuItems.map(({ id, label, icon }) => (
+            <motion.li key={id} whileHover="hover" className="cursor-pointer">
               <Link
-                to={section}
+                to={id}
                 smooth
                 duration={500}
-                className="text-xs text-primary shadow-sm shadow-slate-600 tracking-wider rounded-full px-4 py-2 font-medium"
+                className="flex items-center gap-1.5 text-xs text-primary border border-primary border-opacity-35 tracking-wider rounded-full px-4 py-2 font-semibold"
               >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
+                {icon}
+                {label}
               </Link>
             </motion.li>
           ))}
@@ -46,32 +43,32 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <div className="flex justify-between items-center w-full md:hidden">
-        <Image src={logo} alt="logo" className="w-6 h-6 md:hidden" />
-        <button
-          aria-label="Toggle Menu"
-          className="p-2 transition duration-500 rounded md:hidden"
-          onClick={toggleMenu}
-        >
-          <motion.svg
-            className="w-5 text-primary"
-            variants={motionVariants.iconRotate}
-            animate={isMenuOpen ? "open" : "closed"}
-            viewBox="0 0 24 24"
+          <Image src={logo} alt="logo" className="w-6 h-6 md:hidden" />
+          <button
+            aria-label="Toggle Menu"
+            className="p-2 transition duration-500 rounded md:hidden"
+            onClick={toggleMenu}
           >
-            <path
-              fill="currentColor"
-              d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
-            />
-            <path
-              fill="currentColor"
-              d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
-            />
-            <path
-              fill="currentColor"
-              d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
-            />
-          </motion.svg>
-        </button>
+            <motion.svg
+              className="w-5 text-primary"
+              variants={motionVariants.iconRotate}
+              animate={isMenuOpen ? "open" : "closed"}
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
+              />
+              <path
+                fill="currentColor"
+                d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
+              />
+              <path
+                fill="currentColor"
+                d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
+              />
+            </motion.svg>
+          </button>
         </div>
 
         {/* Mobile Menu */}
@@ -100,24 +97,21 @@ const Navbar = () => {
               </div>
               <nav>
                 <ul className="space-y-5 text-center py-5">
-                  {menuItems.map((section) => (
-                    <motion.li
-                      key={section}
-                      variants={motionVariants.linkHover}
-                      whileHover="hover"
-                      className="cursor-pointer"
-                    >
+                  {menuItems.map(({ id, label, icon }) => (
+                    <motion.li key={id} whileHover="hover" className="cursor-pointer">
                       <Link
-                        to={section}
+                        to={id}
                         smooth
                         duration={500}
-                        className="text-sm text-primary"
-                        onClick={() => setIsMenuOpen(false)} // Close menu on click
+                        className="flex items-center justify-center gap-2 text-sm text-primary"
+                        onClick={() => setIsMenuOpen(false)}
                       >
-                        {section.charAt(0).toUpperCase() + section.slice(1)}
+                        {icon}
+                        {label}
                       </Link>
                     </motion.li>
                   ))}
+
                 </ul>
               </nav>
             </motion.div>

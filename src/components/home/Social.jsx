@@ -29,7 +29,7 @@ const Social = () => {
       {
         socials?.map((social, index) => {
           return (
-            <a href={social.link} target="_blank" title={social.name} key={index} className="transform hover:-translate-y-1 hover:skew-x-2 duration-500 drop-shadow text-[#0b6a8f] hover:text-white text-xl">
+            <a href={social.link} target="_blank" title={social.name} key={index} className="transform hover:-translate-y-1 hover:skew-x-2 duration-500 drop-shadow text-[#4290a4] hover:text-white text-xl">
               {social.icon}
             </a>
           )

@@ -1,4 +1,4 @@
-import photo from "../../assets/mdmehedi.png";
+import photo from "../../assets/mehediahsan.png";
 import "../../styles/bannerStyle.css";
 import Image from "next/image";
 import TypeWrite from "../shared/TypeWrite";
@@ -19,10 +19,7 @@ const Banner = () => {
           alt="Mehedi"
           loading="lazy"
         />
-        <div className="absolute bg-gradient-to-r from-[#012838] via-[#000101] to-[#012838] w-[250px] h-[250px] rounded-full opacity-10"></div>
-        {/* <h1 className="absolute text-sm md:text-base mt-48 uppercase text-slate-300 tracking-[4px]">
-          Software Engineer
-        </h1> */}
+        <div className="absolute bg-gradient-to-r from-[#012838] via-[#000101] to-[#012838] w-[250px] h-[250px] rounded-full opacity-5"></div>
         <h1 className="absolute text-xl md:text-2xl mt-48 text-white uppercase font-sans tracking-[4px]">
           <TypeWrite />
         </h1>
