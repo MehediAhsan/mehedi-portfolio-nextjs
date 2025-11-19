@@ -35,7 +35,6 @@ const Experience = () => {
 
   return (
     <section id="experience" className="py-20">
-      <div className="">
         <h3 className="box mb-16 text-center md:text-left">Experience</h3>
 
         <div className="flex flex-col md:flex-row justify-between gap-8">
@@ -91,7 +90,6 @@ const Experience = () => {
             </div>
           </MotionWrapper>
         </div>
-      </div>
     </section>
   );
 };
