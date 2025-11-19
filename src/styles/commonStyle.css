@@ -1,18 +1,17 @@
 .btn-details {
     --color: #000000;
     --color2: #ffffff;
-    padding: 3px 7px;
+    padding: 3px 8px;
     background-color: #4290a4;
     border-radius: 6px;
     border: 0.3px solid var(--color);
-    transition: 4s;
+    transition: 1s;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     z-index: 1;
     font-weight: 600;
     font-size: 13px;
-    font-family: cursive;
     text-transform: uppercase;
     color: var(--color);
   }
@@ -29,7 +28,7 @@
     left: 25%;
     z-index: -1;
     transition: 0.5s ease-out;
-    background-color: var(--color);
+    background-color: #202728;
   }
   
   .btn-details::before {

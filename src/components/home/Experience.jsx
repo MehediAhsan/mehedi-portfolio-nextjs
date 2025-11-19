@@ -34,11 +34,10 @@ const Experience = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section id="experience" className="py-20">
-        <h3 className="box mb-16 text-center md:text-left">Experience</h3>
+    <section id="experience">
+        <h3 className="box">Experience</h3>
 
         <div className="flex flex-col md:flex-row justify-between gap-8">
-          {/* Timeline / Steps */}
           <MotionWrapper variantName="fadeInUp" stagger={0.1}>
             <div className="flex md:flex-col gap-4">
               {experiences.map((exp, idx) => (
@@ -65,9 +64,8 @@ const Experience = () => {
             </div>
           </MotionWrapper>
 
-          {/* Experience Details */}
           <MotionWrapper variantName="fadeInUp" key={activeStep} delay={0.1} className="md:flex md:justify-end">
-            <div className="md:w-2/3 p-6 bg-gray-950 rounded-xl shadow-lg border border-gray-800 transition-all duration-300">
+            <div className="md:w-2/3 p-6 bg-primary/20 rounded-xl shadow-lg border border-gray-800 transition-all duration-300">
               <h4 className="text-xl md:text-2xl font-semibold text-white mb-2">
                 {experiences[activeStep].role}
               </h4>

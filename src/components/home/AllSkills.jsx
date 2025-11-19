@@ -12,9 +12,9 @@ const AllSkills = () => {
   return (
     <div
       name="skills"
-      className="mb-20"
+      className="my-20"
     >
-      <h3 className="box mb-14">
+      <h3 className="box">
         Skills
       </h3>
       <div className="flex flex-col gap-3 justify-center">
@@ -27,16 +27,16 @@ const AllSkills = () => {
             duration={0.9}
           >
             <div
-              className="w-full rounded p-3 border border-primary/40 shadow-xl backdrop-blur-xl"
+              className="w-full rounded p-3 border border-primary/40 shadow-xl bg-primary/5"
             >
-              <h3 className="text-xl md:text-2xl font-semibold italic tracking-wide mb-3 text-primary">
+              <h3 className="text-lg md:text-xl font-semibold italic tracking-wide mb-3 text-primary">
                 {section.title}
               </h3>
               <div className="flex flex-wrap gap-3">
                 {section.data.map((skill, i) => (
                   <div key={i} className="flex items-center gap-2 p-3 bg-primary/20 rounded-lg text-gray-300">
-                    <skill.icon className="md:text-xl" />
-                    <span className="capitalize max-md:text-xs">{skill.name}</span>
+                    <skill.icon className="md:text-lg" />
+                    <span className="capitalize text-xs md:text-sm">{skill.name}</span>
                   </div>
                 ))}
               </div>

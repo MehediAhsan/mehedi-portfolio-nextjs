@@ -1,40 +1,48 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaFacebook, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaYoutube } from "react-icons/fa";
 
 const Social = () => {
   const socials = [
     {
       name: "Github",
       link: "https://github.com/mehediahsan",
-      icon: <FaGithub/>
+      icon: <FaGithub />,
+      color: "#333",
     },
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/mehediahsan/",
-      icon: <FaLinkedin />
+      icon: <FaLinkedin />,
+      color: "#1E3E62",
     },
     {
       name: "Facebook",
       link: "https://www.facebook.com/MehediAhsanShow",
-      icon: <FaFacebook />
+      icon: <FaFacebook />,
+      color: "#0D63A5",
     },
     {
       name: "Youtube",
       link: "https://www.youtube.com/@mehediahsan",
       icon: <FaYoutube />,
+      color: "#A72703",
     },
   ];
+
   return (
-    <div className="grid grid-cols-1 fixed top-1/2 -translate-y-1/2 left-1 md:left-4 z-50 gap-6">
-      {
-        socials?.map((social, index) => {
-          return (
-            <a href={social.link} target="_blank" title={social.name} key={index} className="transform hover:-translate-y-1 hover:skew-x-2 duration-500 drop-shadow text-[#4290a4] hover:text-white text-xl">
-              {social.icon}
-            </a>
-          )
-        })
-      }
+    <div className="fixed top-1/2 left-2 md:left-4 -translate-y-1/2 flex flex-col gap-4 z-50">
+      {socials.map((social, index) => (
+        <a
+          key={index}
+          href={social.link}
+          target="_blank"
+          title={social.name}
+          className="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 rounded-full shadow-lg transition-transform duration-300 hover:scale-110"
+          style={{ backgroundColor: social.color }}
+        >
+          <span className="text-white text-sm md:text-base">{social.icon}</span>
+        </a>
+      ))}
     </div>
   );
 };

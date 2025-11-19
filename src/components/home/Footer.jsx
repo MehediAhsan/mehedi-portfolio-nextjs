@@ -11,7 +11,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="text-gray-300 py-8">
+    <footer className="text-gray-300 pb-8">
       <div className="container mx-auto px-6 md:px-14 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm md:text-base text-gray-400 text-center md:text-left">
           © {year} Mehedi Ahsan. All rights reserved.

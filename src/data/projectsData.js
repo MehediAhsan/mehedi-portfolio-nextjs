@@ -3,8 +3,18 @@ import restaurantImg from '../assets/projects/restaurant.png'
 import photoImg from '../assets/projects/photo.png'
 import eduImg from '../assets/projects/edu.png'
 import resaleImg from '../assets/projects/resale.png'
+import newsEraImg from '../assets/projects/newsera.png'
 
 export const projects = [
+  {
+    id: "6",
+    name: "NewsEra",
+    description:
+      "The NewsEra Website is a modern, full-featured news platform built with Next.js, Tailwind CSS, and MongoDB. Designed for performance and scalability, it provides an engaging user experience with real-time news updates, a user-friendly dashboard, and secure authentication. The platform leverages server-side rendering (SSR) for fast content delivery and a responsive UI for seamless browsing across all devices.",
+    image: newsEraImg,
+    live_link: "https://newseraonline.vercel.app/",
+    github_client: "https://github.com/MehediAhsan/newsera",
+  },
   {
     id: "1",
     name: "LaptopResalez.",
@@ -46,7 +56,7 @@ export const projects = [
     github_server: "https://github.com/MehediAhsan/ahsan-photography-server",
   },
   {
-    id: "4",
+    id: "5",
     name: "eduConnect",
     description: "This application provide educational courses and tutorials",
     image: eduImg,

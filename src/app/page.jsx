@@ -12,7 +12,7 @@ import Youtube from "@/components/home/Youtube";
 
 export default function Home() {
   return (
-    <main className="px-10 md:px-28">
+    <main className="px-8 md:px-28">
       <Navbar />
       <Banner />
       <About />

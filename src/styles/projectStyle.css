@@ -3,7 +3,7 @@
     border: 2px solid #4290a4;
     background-color: black;
     border-radius: 50%;
-    top: 75px !important;
+    top: 10px !important;
     left: 90%;
     color: #4290a4 !important;
     --swiper-navigation-size: 20px;
@@ -14,7 +14,7 @@
     border: 2px solid #4290a4;
     background-color: black;
     border-radius: 50%;
-    top: 75px !important;
+    top: 10px !important;
     right: 0%;
     color: #4290a4 !important;
     --swiper-navigation-size: 20px;

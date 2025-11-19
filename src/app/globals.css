@@ -19,11 +19,12 @@
 .box {
   position: relative;
   display: inline-block;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.45rem;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
+  margin-bottom: 28px;
 
   /* Modern gradient text */
   background: linear-gradient(90deg, #14b8a6, #67e8f9);

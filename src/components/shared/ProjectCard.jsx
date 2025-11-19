@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
           >
             <h5
               className="text-primary text-lg tracking-tight"
-              style={{ fontFamily: "cursive" }}
+              // style={{ fontFamily: "cursive" }}
             >
               {project.name}
             </h5>

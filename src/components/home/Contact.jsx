@@ -39,17 +39,17 @@ const Contact = () => {
     <MotionWrapper
       id="contact"
       variantName="fadeInUp"
-      className="container mx-auto my-14"
+      className="my-20"
     >
-      <h3 className="box mb-14">Contact</h3>
+      <h3 className="box">Contact</h3>
 
-      <section className="py-6 text-primary">
-        <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto md:grid-cols-2 md:divide-x divide-primary">
+      <section className="text-primary">
+        <div className="grid grid-cols-1 px-6 mx-auto md:grid-cols-2 md:divide-x divide-primary/60">
 
-          <div className="px-6 py-6">
-            <h1 className="text-2xl font-semibold">Get in touch</h1>
+          <div className="md:px-6 py-6">
+            <h1 className="text-2xl font-semibold text-gray-300">Get in touch</h1>
             <p className="pt-2 pb-4 text-sm">
-              I’d love to hear from you! Fill out the form or contact me using
+              I’d love to hear from you! <br />Fill out the form or contact me using
               the details below.
             </p>
 
@@ -76,7 +76,7 @@ const Contact = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="flex flex-col py-6 space-y-4 px-6"
+            className="flex flex-col py-6 space-y-4 md:px-6"
           >
             <label className="block">
               <span className="mb-2">Full name</span>
