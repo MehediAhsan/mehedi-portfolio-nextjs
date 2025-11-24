@@ -39,7 +39,7 @@ const Banner = () => {
           </a>
         </button>
       </div>
-      <div className="pointer-events-none absolute left-6 bottom-6 md:left-10 md:bottom-10 text-xs md:text-sm text-[#00ffcc]/40 font-mono tracking-tight max-md:hidden">
+      <div className="pointer-events-none absolute right-10 bottom-6 md:right-20 md:bottom-20 text-xs md:text-sm text-[#00ffcc]/40 font-mono tracking-tight max-md:hidden">
         <pre style={{ lineHeight: 1.05 }}>{`(async function boot(){\n for(let i=0;i<40;i++){\n console.log('init', i);\n await new Promise(r=>setTimeout(r, 28));\n }\n console.log('ready');\n})();`}</pre>
       </div>
     </MotionWrapper>
