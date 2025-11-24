@@ -33,7 +33,7 @@ const Navbar = () => {
                 to={id}
                 smooth
                 duration={500}
-                className="flex items-center gap-1.5 text-xs text-primary border border-primary border-opacity-35 tracking-wider rounded-full px-4 py-2 font-semibold"
+                className="flex items-center gap-1.5 text-xs text-gray-300 border-2 border-primary border-opacity-35 tracking-wider rounded-full px-4 py-2 font-semibold"
               >
                 {icon}
                 {label}
