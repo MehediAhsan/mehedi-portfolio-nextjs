@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import '../../styles/commonStyle.css';
+import Link from "next/link";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -27,14 +28,16 @@ const ProjectCard = ({ project }) => {
           >
             <h5
               className="text-primary text-lg tracking-tight"
-              // style={{ fontFamily: "cursive" }}
+            // style={{ fontFamily: "cursive" }}
             >
               {project.name}
             </h5>
 
             <FaExternalLinkAlt size={14} className="mr-2 text-gray-200" />
           </a>
-          <button className="btn-details">Details</button>
+          <Link href={`/projects/${project.id}`}>
+            <button className="btn-details">Details</button>
+          </Link>
         </div>
       </div>
     </div>
