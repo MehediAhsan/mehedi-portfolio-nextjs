@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mehedi Ahsan Portfolio
 
-## Getting Started
+Portfolio website built with Next.js App Router, React, and Tailwind CSS.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Sanity blog setup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The blog uses Sanity for content and embeds its Studio at `/studio`.
 
-## Learn More
+1. Create a Sanity project and a dataset (for example, `production`).
+2. Copy the environment template:
 
-To learn more about Next.js, take a look at the following resources:
+   ```powershell
+   Copy-Item .env.example .env.local
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Add your Sanity project ID and dataset to `.env.local`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```env
+   NEXT_PUBLIC_SANITY_PROJECT_ID=your-project-id
+   NEXT_PUBLIC_SANITY_DATASET=production
+   ```
 
-## Deploy on Vercel
+4. Install dependencies and start the app:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Open `/studio`. Create a Blog post, add a publication date that is not in the future, then
+   publish it. It will appear on `/blog`; each article is available at
+   `/blog/<slug>`.
+
+If either environment variable is missing, the blog and Studio routes display
+setup instructions instead of attempting a Sanity request.
+
+The Studio config and post schema are in `sanity.config.js` and
+`src/sanity/schemas/`. Sanity images are served from `cdn.sanity.io`.

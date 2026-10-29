@@ -57,6 +57,6 @@
 }
 
 
-canvas {
+#tsparticles canvas {
   filter: blur(1px);
 }

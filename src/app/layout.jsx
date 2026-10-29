@@ -16,12 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="overflow-hidden">
-          {children}
-          <Toaster />
-          <ParticlesBackground />
-        </div>
+      <body className={`${inter.className} overflow-x-hidden`}>
+        {children}
+        <Toaster />
+        <ParticlesBackground />
       </body>
     </html>
   );
